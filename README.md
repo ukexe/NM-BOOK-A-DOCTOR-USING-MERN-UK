@@ -40,3 +40,61 @@ Follow these steps to set up and run the application on your local machine.
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/book-a-doctor.git
+```
+
+# Book-A-Doctor Project Setup Guide
+
+## 2. Navigate to the Cloned Repository
+
+```bash
+cd book-a-doctor
+```
+
+## 3. Configuration Settings
+
+Rename the environment file in the client directory.
+
+```bash
+# Rename .env.local1 to .env.local in the client directory
+mv client/.env.local1 client/.env.local
+```
+
+## 4. Setting up the Frontend
+
+Open a new terminal in your code editor and run the following commands to install dependencies and start the frontend:
+
+```bash
+cd client
+npm install   # Install the required packages
+npm run dev   # Start the frontend
+```
+
+Open a browser and go to [http://localhost:5173](http://localhost:5173) to view the frontend.
+
+## 5. Setting up the Backend
+
+Open another terminal in your code editor and run these commands to set up and start the backend server:
+
+```bash
+cd server
+npm install          # Install required backend packages
+node server.js       # Start the backend (use `nodemon server.js` for automatic restarts)
+```
+
+The backend will start on PORT 5000 by default. You can change this in the `.env` file if needed.
+
+---
+
+## Technologies Used
+
+- **Frontend**: React, HTML, CSS, JavaScript, Bootstrap
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: JSON Web Tokens (JWT)
+- **Environment Management**: dotenv
+
+---
+
+## Additional Information
+
+For further assistance, please reach out to any of the team members listed above. Their GitHub profiles can be found on the collaborators list.
